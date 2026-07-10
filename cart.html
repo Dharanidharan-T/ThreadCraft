@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThreadCraft Shopping Bag – Elegant Textiles Checkout</title>
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Styles System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free Shipping on Orders Above ₹5,000 | Use Code: <strong>WELCOME10</strong> for 10% Off
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="icon-btn menu-toggle" aria-label="Toggle Navigation">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Collections</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo text-center">
+        ThreadCraft
+        <span>Crafting Style, Weaving Elegance</span>
+      </a>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <div class="search-box">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search fabrics...">
+        </div>
+
+        <!-- Theme Switcher -->
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <button class="icon-btn" aria-label="User Account">
+          <i class="ri-user-3-line"></i>
+        </button>
+
+        <a href="products.html" class="icon-btn" aria-label="Wishlist">
+          <i class="ri-heart-line"></i>
+          <span class="badge wish-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="cart.html" class="icon-btn active" aria-label="Shopping Cart">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="badge cart-badge" style="display: none;">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <div class="cart-title-section">
+        <h1 class="font-sans-title" style="font-size: 1.5rem; font-weight: 600;">Your Shopping Bag</h1>
+      </div>
+
+      <!-- Main Cart Layout -->
+      <div class="cart-grid">
+        
+        <!-- Left: Cart Items -->
+        <div class="cart-items-wrapper" id="cart-items-target">
+          <!-- Populated by app.js -->
+        </div>
+
+        <!-- Right: Summary Box -->
+        <div class="cart-summary" id="cart-summary-box">
+          <h3 class="summary-title font-sans-title">Order Summary</h3>
+          
+          <div class="summary-row">
+            <span>Subtotal</span>
+            <span id="sum-subtotal">₹0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Promo Discount</span>
+            <span id="sum-discount" style="color: var(--success);">-₹0</span>
+          </div>
+
+          <div class="summary-row">
+            <span>Estimated Shipping</span>
+            <span id="sum-shipping">₹0</span>
+          </div>
+
+          <div class="summary-row total">
+            <span>Grand Total</span>
+            <span id="sum-total">₹0</span>
+          </div>
+
+          <!-- Promo Code entry -->
+          <div class="promo-code-widget">
+            <input type="text" id="promo-input" placeholder="Apply Promo Code (WELCOME10)">
+            <button class="btn btn-secondary" onclick="applyPromoCode()">Apply</button>
+          </div>
+
+          <!-- Checkout actions -->
+          <div class="checkout-actions">
+            <button class="btn btn-primary" id="btn-web-checkout">
+              Proceed to Payment
+            </button>
+            
+            <button class="btn btn-whatsapp" id="btn-wa-checkout" style="background-color: #25D366; color: white;">
+              <i class="ri-whatsapp-line" style="margin-right: 8px;"></i> Order via WhatsApp
+            </button>
+          </div>
+
+          <div style="margin-top: 20px; font-size: 0.75rem; color: var(--text-muted); text-align: center;">
+            <i class="ri-shield-check-line" style="margin-right: 4px; vertical-align: middle;"></i> Secure 256-bit SSL encryption.
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Premium Footer -->
+  <footer class="premium-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <a href="index.html" class="logo footer-logo">
+            ThreadCraft
+            <span style="font-size: 0.55rem;">Crafting Style, Weaving Elegance</span>
+          </a>
+          <p class="footer-desc">Creating timeless textiles combining heritage techniques with minimalist contemporary styles. Proudly slow-crafted, ethical, and local.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://pinterest.com" class="social-icon" target="_blank" aria-label="Pinterest"><i class="ri-pinterest-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=sarees" class="footer-link">Handwoven Sarees</a></li>
+            <li><a href="products.html?category=kurtis" class="footer-link">Artisanal Kurtis</a></li>
+            <li><a href="products.html?category=shirts" class="footer-link">Linen Men's Shirts</a></li>
+            <li><a href="products.html?category=kurtas" class="footer-link">Cotton Men's Kurtas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Corporate</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Heritage Story</a></li>
+            <li><a href="about.html#showroom" class="footer-link">Boutique Showroom</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Channels</a></li>
+            <li><a href="products.html" class="footer-link">Fabric Care Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">The Showroom</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-line"></i>
+            <div>102, Avinashi Road, Weaver's Enclave, Coimbatore, 641018</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-line"></i>
+            <div>+91 98765 43210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-line"></i>
+            <div>support@threadcraft.in</div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom">
+        &copy; 2026 ThreadCraft Boutique. All rights reserved. Created in support of handloom heritage.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Central JS references -->
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

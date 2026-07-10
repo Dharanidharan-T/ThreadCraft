@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact ThreadCraft – Showroom Visit & Inquiries</title>
+  <!-- Remix Icons CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+  <!-- Styles System -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    Free Shipping on Orders Above ₹5,000 | Use Code: <strong>WELCOME10</strong> for 10% Off
+  </div>
+
+  <!-- Main Navigation Header -->
+  <header class="main-header">
+    <div class="container header-container">
+      
+      <!-- Mobile Menu Toggle -->
+      <button class="icon-btn menu-toggle" aria-label="Toggle Navigation">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="products.html" class="nav-link">Collections</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </nav>
+
+      <!-- Brand Logo -->
+      <a href="index.html" class="logo text-center">
+        ThreadCraft
+        <span>Crafting Style, Weaving Elegance</span>
+      </a>
+
+      <!-- Actions -->
+      <div class="header-actions">
+        <div class="search-box">
+          <i class="ri-search-line search-icon"></i>
+          <input type="text" class="search-input" placeholder="Search fabrics...">
+        </div>
+
+        <!-- Theme Switcher -->
+        <button class="icon-btn theme-toggle-btn" aria-label="Toggle Theme">
+          <i class="ri-moon-line"></i>
+        </button>
+
+        <button class="icon-btn" aria-label="User Account">
+          <i class="ri-user-3-line"></i>
+        </button>
+
+        <a href="products.html" class="icon-btn" aria-label="Wishlist">
+          <i class="ri-heart-line"></i>
+          <span class="badge wish-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="cart.html" class="icon-btn" aria-label="Shopping Cart">
+          <i class="ri-shopping-bag-line"></i>
+          <span class="badge cart-badge" style="display: none;">0</span>
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      
+      <!-- Section Header -->
+      <section style="padding: 60px 0 20px 0; text-align: center;">
+        <span class="sub-title">Connect With Us</span>
+        <h1 class="details-title" style="margin-top: 8px;">Let's Weave a Conversation</h1>
+        <p class="text-muted" style="max-width: 600px; margin: 0 auto;">Whether you are styling a private collection, visiting our showroom, or seeking raw organic fabric advice, our curators are glad to assist.</p>
+      </section>
+
+      <!-- Contact Info Cards & Form Grid -->
+      <div class="contact-grid">
+        
+        <!-- Left: Static Cards info -->
+        <div class="contact-info-cards">
+          
+          <!-- Card 1: Showroom -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="ri-map-pin-line"></i></div>
+            <div class="contact-card-content">
+              <h3>Boutique Showroom</h3>
+              <p>102, Avinashi Road, Weaver's Enclave,</p>
+              <p>Coimbatore, 641018, India</p>
+              <a href="#map" style="font-size: 0.8125rem; font-weight: 600; color: var(--primary); text-transform: uppercase;">Get Location Map <i class="ri-arrow-right-line"></i></a>
+            </div>
+          </div>
+
+          <!-- Card 2: Phone Support -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="ri-phone-line"></i></div>
+            <div class="contact-card-content">
+              <h3>Direct Channels</h3>
+              <p>Call support: <strong>+91 98765 43210</strong></p>
+              <p>WhatsApp booking: <strong>+91 98765 43210</strong></p>
+              <p style="font-size: 0.75rem; color: var(--text-muted); margin-top: 4px;">Active daily from 10:00 AM to 7:00 PM IST</p>
+            </div>
+          </div>
+
+          <!-- Card 3: Email Channels -->
+          <div class="contact-info-card">
+            <div class="contact-card-icon"><i class="ri-mail-line"></i></div>
+            <div class="contact-card-content">
+              <h3>Electronic Inquiries</h3>
+              <p>General info: <a href="mailto:info@threadcraft.in"><strong>info@threadcraft.in</strong></a></p>
+              <p>Custom stitching / bridal: <a href="mailto:curator@threadcraft.in"><strong>curator@threadcraft.in</strong></a></p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Right: Inquiry Form -->
+        <div class="contact-form-wrapper">
+          <h2>Send Message</h2>
+          <p class="text-muted" style="margin-bottom: 30px; font-size: 0.875rem;">Fill out the form below. A design consultant will reply within 24 hours.</p>
+          
+          <form onsubmit="event.preventDefault(); alert('Message sent successfully! A design consultant will reach out via email shortly.'); this.reset();">
+            
+            <div class="form-group-row">
+              <div class="form-group">
+                <label for="contact-name">Full Name</label>
+                <input type="text" id="contact-name" class="form-input" placeholder="e.g. Dhara Sen" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Email Address</label>
+                <input type="email" id="contact-email" class="form-input" placeholder="e.g. dhara@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-phone">Phone Number</label>
+              <input type="tel" id="contact-phone" class="form-input" placeholder="e.g. +91 98765 43210">
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Regarding</label>
+              <select id="contact-subject" class="form-input" style="height: 48px;" required>
+                <option value="" disabled selected>Select an option</option>
+                <option value="showroom">Showroom Visit Appointment</option>
+                <option value="custom">Custom Saree Silk Colors</option>
+                <option value="bulk">Bulk Khadi & Cotton Orders</option>
+                <option value="other">General styling questions</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Your Message</label>
+              <textarea id="contact-message" class="form-input" style="height: 120px; resize: none; font-family: inherit;" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%; border: none;">Send Inquiry</button>
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- Google Maps Embed placeholder -->
+      <section id="map" class="map-section">
+        <h2 class="font-sans-title" style="font-size: 1rem; font-weight: 600; margin-bottom: 20px;">Virtual Showroom Map</h2>
+        <div class="map-wrapper">
+          <!-- Premium themed minimal map via Google Maps Embed API using placeholder location -->
+          <iframe title="ThreadCraft Showroom Location Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15664.922116035099!2d76.96025!3d11.01201!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba859af2f973b7b%3A0x2fe7a5ea32630a9e!2sCoimbatore%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Premium Footer -->
+  <footer class="premium-footer">
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <a href="index.html" class="logo footer-logo">
+            ThreadCraft
+            <span style="font-size: 0.55rem;">Crafting Style, Weaving Elegance</span>
+          </a>
+          <p class="footer-desc">Creating timeless textiles combining heritage techniques with minimalist contemporary styles. Proudly slow-crafted, ethical, and local.</p>
+          <div class="social-links">
+            <a href="https://instagram.com" class="social-icon" target="_blank" aria-label="Instagram"><i class="ri-instagram-line"></i></a>
+            <a href="https://facebook.com" class="social-icon" target="_blank" aria-label="Facebook"><i class="ri-facebook-fill"></i></a>
+            <a href="https://pinterest.com" class="social-icon" target="_blank" aria-label="Pinterest"><i class="ri-pinterest-fill"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Collections</h4>
+          <ul class="footer-links">
+            <li><a href="products.html?category=sarees" class="footer-link">Handwoven Sarees</a></li>
+            <li><a href="products.html?category=kurtis" class="footer-link">Artisanal Kurtis</a></li>
+            <li><a href="products.html?category=shirts" class="footer-link">Linen Men's Shirts</a></li>
+            <li><a href="products.html?category=kurtas" class="footer-link">Cotton Men's Kurtas</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">Corporate</h4>
+          <ul class="footer-links">
+            <li><a href="about.html" class="footer-link">Our Heritage Story</a></li>
+            <li><a href="about.html#showroom" class="footer-link">Boutique Showroom</a></li>
+            <li><a href="contact.html" class="footer-link">Contact Channels</a></li>
+            <li><a href="products.html" class="footer-link">Fabric Care Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-heading">The Showroom</h4>
+          <div class="footer-contact-item">
+            <i class="ri-map-pin-line"></i>
+            <div>102, Avinashi Road, Weaver's Enclave, Coimbatore, 641018</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-phone-line"></i>
+            <div>+91 98765 43210</div>
+          </div>
+          <div class="footer-contact-item">
+            <i class="ri-mail-line"></i>
+            <div>support@threadcraft.in</div>
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="footer-bottom">
+        &copy; 2026 ThreadCraft Boutique. All rights reserved. Created in support of handloom heritage.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Central JS references -->
+  <script src="js/products-data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
