@@ -159,15 +159,31 @@ document.addEventListener('DOMContentLoaded', () => {
   const pagePath = window.location.pathname;
   const pageFile = pagePath.substring(pagePath.lastIndexOf('/') + 1);
   
-  if (pageFile === 'index.html' || pageFile === '') {
+  if (
+    pageFile === '' ||
+    pageFile === 'index.html' ||
+    pageFile === 'index'
+) {
     renderHomeCollections();
-  } else if (pageFile === 'products.html') {
+}
+else if (
+    pageFile === 'products.html' ||
+    pageFile === 'products'
+) {
     initCatalogPage();
-  } else if (pageFile === 'product-details.html') {
+}
+else if (
+    pageFile === 'product-details.html' ||
+    pageFile === 'product-details'
+) {
     initProductDetailsPage();
-  } else if (pageFile === 'cart.html') {
+}
+else if (
+    pageFile === 'cart.html' ||
+    pageFile === 'cart'
+) {
     initCartPage();
-  }
+}
 });
 
 // Sticky Header logic
