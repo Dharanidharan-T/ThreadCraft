@@ -8,7 +8,6 @@ const PRODUCTS = [
     discountPrice: 7200,
     images: [
       "assets/product-saree-1.png",
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop"
     ],
     description: "Exquisite handspun cotton-silk blend, with delicate zari borders weaved by master craftspeople in Varanasi. Embodying our heritage of hand loom craftsmanship, this saree is both soft and exceptionally regal. Perfect for elegant celebrations, festivals, or family legacies.",
     specs: {
@@ -29,8 +28,7 @@ const PRODUCTS = [
     price: 4200,
     discountPrice: 3800,
     images: [
-      "https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1610030469668-93535c17b6b3?q=80&w=800&auto=format&fit=crop"
+      "assets/saree.jpg",
     ],
     description: "Lightweight and breathable kora linen saree with modern minimalist solid borders and geometric hand-woven checks on the pallu. Made from pure flax linen grown in organic farms and spun by local weavers using Traditional processes.",
     specs: {
@@ -46,13 +44,12 @@ const PRODUCTS = [
   },
   {
     id: "kurti-1",
-    title: "Gulabi Handblock Cotton Kurti",
+    title: "Handblock Cotton Kurti",
     category: "kurtis",
     price: 2400,
     discountPrice: 1950,
     images: [
-      "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1583391733956-6c78276477e2?q=80&w=800&auto=format&fit=crop"
+      "assets/kurti.jpg",
     ],
     description: "A-line cotton kurti styled with natural vegetable-dyed floral handblock prints from Bagru, Jaipur. Flattering V-neck with fine wooden button detailing, dual side pockets, and comfortable fit for all-day elegance.",
     specs: {
@@ -74,7 +71,6 @@ const PRODUCTS = [
     discountPrice: 2900,
     images: [
       "assets/product-kurti-2.png",
-      "https://images.unsplash.com/photo-1608748010899-18f300247112?q=80&w=800&auto=format&fit=crop"
     ],
     description: "Elegant hand-embroidered Lucknowi Chikankari shadow work on translucent premium cotton georgette fabric. Intricate floral paisleys on the front panels make this an absolute masterpiece of needlework art.",
     specs: {
@@ -96,7 +92,6 @@ const PRODUCTS = [
     discountPrice: 2400,
     images: [
       "assets/product-shirt-1.png",
-      "https://images.unsplash.com/photo-1617137968427-85924c800a22?q=80&w=800&auto=format&fit=crop"
     ],
     description: "Relaxed fit luxury linen shirt with a classic collar, curved hem, and premium solid coconut shell buttons. Highly breathable, soft-washed to minimize initial linen stiffness, and styled for effortless summer sophistication.",
     specs: {
@@ -118,7 +113,6 @@ const PRODUCTS = [
     discountPrice: 1800,
     images: [
       "assets/product-shirt-2.png",
-      "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800&auto=format&fit=crop"
     ],
     description: "Mens tailored shirt block printed by hand in indigo dye. Subtle micro motifs create a pleasant texture. Featuring structured collars and double-stitched cuffs.",
     specs: {
@@ -140,7 +134,6 @@ const PRODUCTS = [
     discountPrice: 2700,
     images: [
       "assets/product-kurta-1.png",
-      "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop"
     ],
     description: "Handspun and hand-woven Khadi long kurta with a mandarin collar. Elegant beige and ivory cross-weaving that exudes visual depth, thermal comfort, and understated heritage styling.",
     specs: {
@@ -161,8 +154,7 @@ const PRODUCTS = [
     price: 4800,
     discountPrice: 4200,
     images: [
-      "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?q=80&w=800&auto=format&fit=crop",
-      "https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop"
+      "assets/product-kurta-2.jpg",
     ],
     description: "Rich madder-crimson kurta crafted in premium Bhagalpuri Tussar silk, featuring a self-check weave texture. Understated elegance with subtle matte-gold cord piping running along the mandarin collar.",
     specs: {
